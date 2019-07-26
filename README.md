@@ -10,7 +10,7 @@ Other Essential Things :
 - Standar USB to Micro USB cable
 - ESP-12E Development Board ESP8266 NodeMCU
 - OLED I2C Display 128x64 Pixel
-- MicroSD Modul ([MicroSD Modul.jpg](images/MicroSD Modul.jpg))
+- MicroSD Modul ([](images/MicroSD Modul.jpg))
 
 # How to Make One ?
 
