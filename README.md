@@ -1,12 +1,16 @@
 # Weather Station ESP8266
 
-# Demo
-
 # Overview
 The repository includes everything needed to build an Weather Station ESP8266 (including hardware information, PCB Design, and footprint):
 
 # What do I Need To Make One?
-In this project, we assume that we still need to debug and see the output in serial monitor
+In this project, we assume that we still need to debug and see the output in serial monitor. So we need :
+- Arduino IDE (recommended the lastest version) with serial monitor in PC or Laptop
+Other Essential Things :
+- Standar USB to Micro USB cable
+- ESP-12E Development Board ESP8266 NodeMCU
+- OLED I2C Display 128x64 Pixel
+- MicroSD Modul ([MicroSD Modul.jpg](images/MicroSD Modul.jpg))
 
 # How to Make One ?
 
