@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name weather-rescue)(type Legacy)(uri ${KIPRJMOD}/weather-rescue.lib)(options "")(descr ""))
+  (lib (name oled_i2c)(type Legacy)(uri "C:/Users/Wirahita Putramas/Documents/KiCAD/Weather Station V 2.0 (tanpa BMP180)/oled_i2c.lib")(options "")(descr ""))
+  (lib (name Mounting_Holes)(type Legacy)(uri "C:/Users/Wirahita Putramas/Documents/KiCAD/Weather Station V 2.0 (tanpa BMP180)/Mounting_Holes.lib")(options "")(descr ""))
+  (lib (name testpoint)(type Legacy)(uri ${KIPRJMOD}/testpoint.lib)(options "")(descr ""))
+)
