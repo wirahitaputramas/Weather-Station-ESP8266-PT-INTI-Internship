@@ -1,10 +1,10 @@
 # Weather Station ESP8266
 
 # Overview
-The repository includes everything needed to build an Weather Station ESP8266 (including hardware information, PCB Design, and footprint):
+  The repository includes everything needed to build an Weather Station ESP8266 (including hardware information, PCB Design, and footprint):
 
 # What do I Need To Make One?
-In this project, we assume that we still need to debug and see the output in serial monitor. So we need :
+  In this project, we assume that we still need to debug and see the output in serial monitor. So we need :
 - Arduino IDE (the lastest version recommended) with serial monitor in PC or Laptop
 
 Other Essential Things :
@@ -20,21 +20,20 @@ Other Essential Things :
 # How to Make One ?
 
 ## 1. Prototype design on breadboard (Fritzing)
-Before we make the circuit on the PCB, we must ensure that we choose the correct GPIO. Because of that, first of all we must hookup all component on breadboard like this picture below :
+  Before we make the circuit on the PCB, we must ensure that we choose the correct GPIO. Because of that, first of all we must hookup all component on breadboard like this picture below :
 <div align="center">
   <img src="images/Weather-Station-V-2.0.jpg" width="300" height="500">
 </div>
 
 Here the connection of each pin (exclude Vcc & GND) :
-- GPIO5 to OLED SCL
-- GPIO4 to OLED SDA
-- GPIO2 to DHT22 IO (Data)
-- GPIO14 to microSD SCLK
-- GPIO12 to microSD MISO
-- GPIO13 to microSD MOSI
-- GPIO15 to microSD CS
-- ADC0 to LDR Photoresistor
-
+- D1 or GPIO5 to OLED SCL
+- D2 or GPIO4 to OLED SDA
+- D4 or GPIO2 to DHT22 IO (Data)
+- D5 or GPIO14 to microSD SCLK
+- D6 or GPIO12 to microSD MISO
+- D7 or GPIO13 to microSD MOSI
+- D8 or GPIO15 to microSD CS
+- A0 or ADC0 to LDR Photoresistor
 
 ## 2. Testing each component separately
 
