@@ -24,7 +24,8 @@ Before we make the circuit on the PCB, we must ensure that we choose the correct
 <div align="center">
   <img src="images/Weather-Station-V-2.0.jpg" width="300" height="500">
 </div>
-Here the connection of each pin (exclude Vcc & GND) : 
+
+Here the connection of each pin (exclude Vcc & GND) :
 - GPIO5 to OLED SCL
 - GPIO4 to OLED SDA
 - GPIO2 to DHT22 IO (Data)
