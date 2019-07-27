@@ -38,7 +38,7 @@ const char * myWriteAPIKey = "API KEY"; //Replace with your API key
 
 /* NTP Client Property */
 
-#include "NTPClient.h"
+#include "NTPClient.h" // this is external library from NTP library Fabrice Weinberg (https://github.com/arduino-libraries/NTPClient.git). Put this library in the same folder with this .ino file
 #include <WiFiUdp.h> //handles sending and receiving of UDP packages
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
