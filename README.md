@@ -20,13 +20,19 @@ Other Essential Things :
 # How to Make One ?
 
 ## 1. Prototype design on breadboard (Fritzing)
-Before we make the circuit on the PCB, we must ensure that we choose the correct GPIO. Because of that, first of all we must hookup all component on breadboard like this picture
-<p align="center">
+Before we make the circuit on the PCB, we must ensure that we choose the correct GPIO. Because of that, first of all we must hookup all component on breadboard like this picture below :
+<div align="center">
   <img src="images/Weather-Station-V-2.0.jpg" width="300" height="500">
-</p>
-
-Here the connection of each pin (exclude Vcc & GND) :
-- 
+</div>
+Here the connection of each pin (exclude Vcc & GND) : 
+- GPIO5 to OLED SCL
+- GPIO4 to OLED SDA
+- GPIO2 to DHT22 IO (Data)
+- GPIO14 to microSD SCLK
+- GPIO12 to microSD MISO
+- GPIO13 to microSD MOSI
+- GPIO15 to microSD CS
+- ADC0 to LDR Photoresistor
 
 
 ## 2. Testing each component separately
