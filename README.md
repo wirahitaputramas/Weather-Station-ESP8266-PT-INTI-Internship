@@ -19,7 +19,7 @@ Other Essential Things :
 
 # How to Make One ?
 
-## 1. Testing and Prototyping on Breadboard
+## Testing and Prototyping on Breadboard
 Before we make the circuit on the PCB, we must ensure that we choose the correct GPIO. Because of that, first of all we must hookup all component on breadboard like this picture below :
 <div align="center">
   <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Weather-Station-V-2.0.jpg" width="300" height="500">
@@ -68,9 +68,12 @@ const char * myWriteAPIKey = "API KEY"; //Replace with your API key
 
 5. After finish uploading the program. Open the serial monitor and set the baud rate at 115200. Make sure there's no "nan" value. The nan value sometimes appear at DHT22 reading value. To Fix that, just try to plug and unplug again the DHT22 until the exact value appear, or you can trigger the DHT22 by connecting the Vcc pin to 5V
 
-## 2. PCB Desain, Assembly The Final Design, And Run the Weather Station on PCB
+## PCB Desain, Assembly The Final Design, And Run the Weather Station on PCB
 
-After the Prototyping on breadboard finish, now we can design the PCB on KiCad. First you need to make the Schematic or diagram of your circuit including the connection between each pin in ESP8266 and all the others component.
+After the Prototyping on breadboard finish, now we can design the PCB on KiCad. 
+
+1. First you need to make the Schematic or diagram of your circuit including the connection between each pin in ESP8266 and all the others component.
+
 In this repo, you can get all file you need if you just want to skip this step. Find all .lib files. Those are your symbol schematic library. Our team have made those symbols from the scratch by seeing the datasheet and the real component. But we strongly recommended to learn and try make your own symbol because sometimes the symbol library from the other author doesn't match with your real component, usually it's pin arrangement. This is our schematic
 <div align="center">
   <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Skematik.jpg" width="800" height="600">
@@ -78,13 +81,19 @@ In this repo, you can get all file you need if you just want to skip this step. 
 
 Use the label method instead of wiring method to make connection between each pin and don't forget to give some outline and comment information
 
+2. Test The connection, and if no error, assign the footprint of each component
+In this repo, we have included all footprint of the project, so you can just find the .preety folder and use that
 
-## 3. Hookup prototype on breadboard
+3. Placing and Tracking the PCB
+Actually, this process depend on your own preference in placing and route the PCB. It isn't a problem if you try this step and find that your PCB is different with our PCB below, because the importnt things is all ratnest disappear and all the pin connection is right
 
-## 4. Coding The Whole System
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/PCB-Weather-Station-Fix.jpg" width="800" height="500">
+</div>
 
-## 5. Testing whole prototype on breadboard
+We choose a single layer instead of double layer because in our place double layer PCB more exspensive even when you compare with a huge single layer PCB. And also in our place, The manufacture and Printing Machine only support minimum track size at 0.6 mm and hole or drill diameter at 0.4 mm
 
-## 6. PCB design (KiCad)
 
-## 7. Hookup & Run on PCB
+
+
+
