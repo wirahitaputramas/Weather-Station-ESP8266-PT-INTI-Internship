@@ -24,7 +24,9 @@ Before we make the circuit on the PCB, we must ensure that we choose the correct
 <div align="center">
   <img src="images/Weather-Station-V-2.0.jpg" width="300" height="500">
 </div>
-Here is the raw fritzing file ([Weather Station ESP8266 on Breadboard.fzz](Weather-Station-ESP8266-PT-INTI-Internship/Weather%20Station%20ESP8266%20on%20Breadboard.fzz))
+
+Here is the raw fritzing file ([Pict](https://github.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/blob/master/Weather%20Station%20ESP8266%20on%20Breadboard.fzz "Weather Station ESP8266 on Breadboard"))
+
 Here the connection of each pin (exclude Vcc & GND) :
 - D1 or GPIO5 to OLED SCL
 - D2 or GPIO4 to OLED SDA
