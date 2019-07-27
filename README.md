@@ -19,15 +19,15 @@ Other Essential Things :
 
 # How to Make One ?
 
-## 1. Prototype design on breadboard (Fritzing)
+## 1. Testing and Prototyping on Breadboard
 Before we make the circuit on the PCB, we must ensure that we choose the correct GPIO. Because of that, first of all we must hookup all component on breadboard like this picture below :
 <div align="center">
-  <img src="images/Weather-Station-V-2.0.jpg" width="300" height="500">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Weather-Station-V-2.0.jpg" width="300" height="500">
 </div>
 
-Here is the raw fritzing file ([Pict](https://github.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/blob/master/Weather%20Station%20ESP8266%20on%20Breadboard.fzz "Weather Station ESP8266 on Breadboard"))
+Here is the raw fritzing file ([Fritzing](https://github.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/blob/master/Weather%20Station%20ESP8266%20on%20Breadboard.fzz "Weather Station ESP8266 on Breadboard"))
 
-Here the connection of each pin (exclude Vcc & GND) :
+Here is the connection of each pin (exclude Vcc & GND) :
 - D1 or GPIO5 to OLED SCL
 - D2 or GPIO4 to OLED SDA
 - D4 or GPIO2 to DHT22 IO (Data)
@@ -37,8 +37,46 @@ Here the connection of each pin (exclude Vcc & GND) :
 - D8 or GPIO15 to microSD CS
 - A0 or ADC0 to LDR Photoresistor
 
-## 2. Testing each component separately
+After finish the wiring, just prepare to upload the arduino whole program. We will modify any part of the source code in this repository
 
+1. make sure that you have included the NTP Library from Fabrice Weinberg in the same folder with .ino file. Here is the [NTP Library Fabrice Weinberg](https://github.com/arduino-libraries/NTPClient.git "NTP Library Fabrice Weinberg")
+
+2. Write down your WiFi Accses Point identity in IoT Property Block Code
+
+```
+/* IoT Property */
+#include <ESP8266WiFi.h>
+const char *ssid =  "SSID";     // replace with your wifi ssid and wpa2 key
+const char *pass =  "PASS";
+WiFiClient client;
+```
+3. Make your project channel in Thingspeak platform. Allocate three fields to store three different sensor reading data. After that get your channel ID and API key of your project channel. In the Screenshot below, the blue scratch is the channel ID, and the red scratch is the API Key
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Screenshot%20(476)_LI.jpg" width="800" height="400">
+</div>
+
+Write down your Thingspeak Channel identity in Thingspeak Property Block Code in the source code.ino
+```
+/* Thingspeak Property */
+#include <ThingSpeak.h>
+unsigned long myChannelNumber = 823396; //Replace with your channel number
+const char * myWriteAPIKey = "API KEY"; //Replace with your API key
+/* End of Thingspeak Property */
+```
+
+4. Make sure all of pin assign in the source code.ino related to your wiring on breadboard
+
+5. After finish uploading the program. Open the serial monitor and set the baud rate at 115200. Make sure there's no "nan" value. The nan value sometimes appear at DHT22 reading value. To Fix that, just try to plug and unplug again the DHT22 until the exact value appear, or you can trigger the DHT22 by connecting the Vcc pin to 5V
+
+## 2. PCB Desain, Assembly The Final Design, And Run the Weather Station on PCB
+
+After the Prototyping on breadboard finish, now we can design the PCB on KiCad. First you need to make the Schematic or diagram of your circuit including the connection between each pin in ESP8266 and all the others component.
+In this repo, you can get all file you need if you just want to skip this step. Find all .lib files. Those are your symbol schematic library. Our team have made those symbols from the scratch by seeing the datasheet and the real component. But we strongly recommended to learn and try make your own symbol because sometimes the symbol library from the other author doesn't match with your real component, usually it's pin arrangement. This is our schematic
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Skematik.jpg" width="800" height="600">
+</div>
+
+Use the label method instead of wiring method to make connection between each pin and don't forget to give some outline and comment information
 
 
 ## 3. Hookup prototype on breadboard
