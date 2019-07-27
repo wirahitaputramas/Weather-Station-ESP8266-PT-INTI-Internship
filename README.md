@@ -22,7 +22,7 @@ Other Essential Things :
 ## 1. Prototype design on breadboard (Fritzing)
 Before we make the circuit on the PCB, we must ensure that we choose the correct GPIO. Because of that, first of all we must hookup all component on breadboard like this picture
 <p align="center">
-  <img src="images/Weather-Station-V-2.jpg" width="300" height="500">
+  <img src="images/Weather-Station-V-2.0.jpg" width="300" height="500">
 </p>
 
 Here the connection of each pin (exclude Vcc & GND) :
