@@ -104,7 +104,12 @@ Actually, this process depend on your own preference in placing and route the PC
 We choose a single layer instead of double layer because in our place double layer PCB more exspensive even when you compare with a huge single layer PCB. And also in our place, The manufacture and Printing Machine only support minimum track size at 0.6 mm and hole or drill diameter at 0.4 mm
 
 4. After Finish the PCB. Generate the Greber File (as already available in this repo). Those picture below are some configuration to generate the gerber and drill file of our PCB
-
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Print_Config2.jpg" width="800" height="400">
+</div>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Print_Config.jpg" width="800" height="400">
+</div>
 
 
 5. Print the PCB with Gerber File. Actually I just give those gerber and drill file and don't know the exact process of PCB printing. But i see the PCB printing employee use corel draw to process the greber file.
