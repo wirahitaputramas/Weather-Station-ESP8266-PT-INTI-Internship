@@ -2,6 +2,14 @@
 
 # Overview
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Diagram_System.png" width="550" height="400">
+</div>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/WSE_Off.jpg" width="300" height="500">
+</div>
+
+
 
 The repository includes everything needed to build an Weather Station ESP8266 (including hardware information, PCB Design, and footprint):
 
@@ -100,12 +108,26 @@ We choose a single layer instead of double layer because in our place double lay
 
 
 5. Print the PCB with Gerber File. Actually I just give those gerber and drill file and don't know the exact process of PCB printing. But i see the PCB printing employee use corel draw to process the greber file.
+
 This first image is our PCB before soldering process
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/PCB_Printed.jpg" width="400" height="500">
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/PCB_Soldering2.jpg" width="400" height="500">
+</div>
+
 
 The  image is our PCB after soldering process
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/PCB_Soldering.jpg" width="800" height="400">
+</div>
 
-The  image is our Weather Station ESP8266 Running on PCB
+
+
+
 
 
 
