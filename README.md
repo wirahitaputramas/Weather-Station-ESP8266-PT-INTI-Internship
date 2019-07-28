@@ -6,7 +6,14 @@
   <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Diagram_System.png" width="550" height="400">
 </div>
 <div align="center">
-  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/WSE_Off.jpg" width="300" height="500">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/WSE_Off.jpg" width="500" height="400">
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/ThingSpeak.png" width="550" height="400">
+</div>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wirahitaputramas/Weather-Station-ESP8266-PT-INTI-Internship/master/images/Thingview.jpg" width="200" height="400">
 </div>
 
 
